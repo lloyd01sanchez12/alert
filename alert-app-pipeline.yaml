@@ -1,0 +1,22 @@
+---
+- name: Ansible playbook to build, push code into docker registry in okteto, then install the image via helm
+  hosts: localhost
+  tasks:
+
+  - name: Build an image and push it to Okteto Registry
+    docker_image:
+        path: $PWD/alert-app/
+        name: registry.cloud.okteto.net/lloyd01sanchez12/alert-app
+        tag: 0.0.1
+        push: yes
+    register: command_output
+   
+  - debug:
+        var: command_output.stdout_lines
+
+  - name: Install helm chart my-rails-app to Okteto
+    command: helm install alert-app $PWD/alert-helm/.
+    register: command_output
+
+  - debug:
+        var: command_output.stdout_lines
