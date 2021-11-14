@@ -2,7 +2,7 @@
 
 It is a simple app to create alerts and list them.
 
-##URL
+## URL
 https://alert-app-lloyd01sanchez12.cloud.okteto.net/
 
 ### Pre-requisite
@@ -13,7 +13,7 @@ Make sure to download/clone the public reposity from git for this application:
 
 Please take note from where you perform download the code as this can affect proceeding steps.
 
-###Okteto
+### Okteto
 
 Make sure that okteto CLI is already enabled, initialized or installed into your shell:
 
@@ -30,7 +30,7 @@ Afterwards, you may now update the KUBECONFIG in order to point or set your kube
 `okteto context update-kubeconfig`
 
 
-#####Okteto_Registry 
+##### Okteto Registry 
 
 Before you start the deployment, make sure that you are successfully logged in to okteto and its docker registry by using the command below:
 
