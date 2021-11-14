@@ -6,7 +6,7 @@
   - name: Build an image and push it to Okteto Registry
     docker_image:
         path: $PWD/alert-app/
-        name: registry.cloud.okteto.net/lloyd01sanchez12/alert-app
+        name: registry.cloud.okteto.net/{{ appnamespace }}/alert-app
         tag: 0.0.1
         push: yes
     register: command_output
