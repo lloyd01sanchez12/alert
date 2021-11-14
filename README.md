@@ -2,6 +2,9 @@
 
 It is a simple app to create alerts and list them.
 
+##URL
+https://alert-app-lloyd01sanchez12.cloud.okteto.net/
+
 ### Pre-requisite
 
 Make sure to download/clone the public reposity from git for this application:
