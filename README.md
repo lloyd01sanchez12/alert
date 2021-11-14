@@ -38,7 +38,7 @@ Before you start the deployment, make sure that you are successfully logged in t
 
 Before you begin, make sure that the namespace should also be updated accordingly from the helm chart's `values.yaml` file. To update, use the command:
 
-`sed -i 's/<input your namespace here>/okt_namespace/g' $PWD/alert-helm/values.yaml`
+`sed -i 's/okt_namespace/<input your namespace here>/g' $PWD/alert-helm/values.yaml`
 
 The application will automatically be deployed using ansible-playbook:
 
